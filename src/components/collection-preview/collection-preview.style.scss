@@ -1,0 +1,39 @@
+.collection-preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .preview-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+    & > span {
+      font-size: 16px;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dedada;
+      }
+    }
+  }
+
+  .preview {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 84.375em) {
+  /* For Tab-port  84.375em= 1350px/16px */
+  .collection-preview .preview {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}

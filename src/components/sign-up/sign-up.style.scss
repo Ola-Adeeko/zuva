@@ -1,0 +1,19 @@
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+
+  .title {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* For Tab-port  37.5em= 600px/16px */
+  .sign-up {
+    width: 95vw;
+    button {
+      width: 95vw;
+    }
+  }
+}

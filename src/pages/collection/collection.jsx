@@ -9,7 +9,7 @@ const Collection = ({ title, items }) => {
 
   useEffect(() => {
     document.title = `Zuva | ${collection}`;
-  }, []);
+  }, [collection]);
 
   const data = SHOP_DATA.filter((item) => item.title === collection);
   console.log(data);
